@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="viewport" content="width=360, initial-scale=1, shrink-to-fit=no"> -->
+
+    <title>Стартовый шаблон</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./js/fancybox/fancybox.css" />
+    <link rel="stylesheet" href="./js/tiny-slider/tiny-slider.css" />
+
+    <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicons/apple-touch-icon.png"
+    />
+  </head>
+
+  <body class="sticky-footer">
+    <header class="header" id="top">
+      <div class="container container--mobile-fluid">
+        <div class="header__row">
+          <a href="#!" class="header__logo logo"> ВебКадеми </a>
+
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#" class="nav__link">О компании</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Услуги</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Портфолио</a>
+              </li>
+              <li class="nav__item">
+                <a href="#" class="nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <button class="header__nav-btn" id="openMobileNav">
+            <img src="./img/icons/nav-btn-open.svg" alt="Open nav" />
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="mobile-nav">
+      <h2 class="visually-hidden">Мобильная навигация</h2>
+
+      <button class="mobile-nav__btn" id="closeMobileNav">
+        <img src="./img/icons/nav-btn-close.svg" alt="Close navigation" />
+      </button>
+
+      <div class="mobile-nav__body">
+        <ul class="mobile-nav-list">
+          <li><a href="#">Локации</a></li>
+          <li><a href="#">Сервис</a></li>
+          <li><a href="#">Тарифы</a></li>
+          <li><a href="#">Расположение</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <main class="main">
+      <div class="container">
+        <h1 class="title mb-2">Стартовый шаблон</h1>
+
+        <section class="mb-4">
+          <h2 class="title-2 mb-1">FancyBox</h2>
+          <p>
+            <a href="https://fancyapps.com/fancybox/" target="_blank"
+              >Docs and demo</a
+            >
+          </p>
+          <p class="mb-2">
+            <button class="btn" data-fancybox data-src="#modalWindow">
+              Модальное окно через FancyBox
+            </button>
+          </p>
+
+          <div class="fancy-box-gallery mb-2">
+            <a href="./img/slider/slide-01.jpg" data-fancybox="gallery">
+              <img width="100" src="./img/slider/slide-01.jpg" alt="" />
+            </a>
+            <a href="./img/slider/slide-02.jpg" data-fancybox="gallery">
+              <img width="100" src="./img/slider/slide-02.jpg" alt="" />
+            </a>
+            <a href="./img/slider/slide-03.jpg" data-fancybox="gallery">
+              <img width="100" src="./img/slider/slide-03.jpg" alt="" />
+            </a>
+            <a href="./img/slider/slide-04.jpg" data-fancybox="gallery">
+              <img width="100" src="./img/slider/slide-04.jpg" alt="" />
+            </a>
+            <a href="./img/slider/slide-05.jpg" data-fancybox="gallery">
+              <img width="100" src="./img/slider/slide-05.jpg" alt="" />
+            </a>
+          </div>
+
+          <div class="fancy-box-video">
+            <a href="https://www.youtube.com/watch?v=4FUnXaq_VWk" data-fancybox
+              >YouTube video</a
+            >
+          </div>
+        </section>
+
+        <section class="mb-4">
+          <h2 class="title-2 mb-1">Tiny Slider</h2>
+          <p class="mb-2">
+            <a href="https://github.com/ganlanyuan/tiny-slider" target="_blank">
+              Docs
+            </a>
+            <a
+              href="https://ganlanyuan.github.io/tiny-slider/demo/"
+              target="_blank"
+            >
+              Demo
+            </a>
+          </p>
+
+          <div class="tinySlider" id="tinySlider">
+            <div>
+              <img
+                class="tns-lazy-img"
+                width="525"
+                src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                data-src="./img/slider/slide-01.jpg"
+                data-srcset="./img/slider/slide-01@2x.jpg 2x"
+                alt="Slide"
+              />
+            </div>
+
+            <div>
+              <img
+                class="tns-lazy-img"
+                width="300"
+                src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                data-src="./img/slider/slide-02.jpg"
+                data-srcset="./img/slider/slide-02@2x.jpg 2x"
+                alt="Slide"
+              />
+            </div>
+            <div>
+              <img
+                class="tns-lazy-img"
+                width="435"
+                src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                data-src="./img/slider/slide-03.jpg"
+                data-srcset="./img/slider/slide-03@2x.jpg 2x"
+                alt="Slide"
+              />
+            </div>
+            <div>
+              <img
+                class="tns-lazy-img"
+                width="300"
+                src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                data-src="./img/slider/slide-04.jpg"
+                data-srcset="./img/slider/slide-04@2x.jpg 2x"
+                alt="Slide"
+              />
+            </div>
+            <div>
+              <img
+                class="tns-lazy-img"
+                width="300"
+                src="data:image/gif;base64,R0lGODlhAQABAPAAAMzMzAAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                data-src="./img/slider/slide-05.jpg"
+                data-srcset="./img/slider/slide-05@2x.jpg 2x"
+                alt="Slide"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="mb-4">
+          <h2 class="title-2 mb-1">Аккордеон</h2>
+
+          <div class="accordion mb-3" id="accordion-1">
+            <section class="accordion__item">
+              <h2 class="accordion__header">
+                <button type="button" class="accordion__btn">Block 1</button>
+              </h2>
+              <div class="accordion__content">
+                <div class="accordion__body">
+                  <h3 class="title-3 mb-1">Content 1</h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dolores nemo illum, accusamus error vel.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section class="accordion__item">
+              <h2 class="accordion__header">
+                <button type="button" class="accordion__btn">Block 2</button>
+              </h2>
+              <div class="accordion__content">
+                <div class="accordion__body">
+                  <h3 class="title-3 mb-1">Content 2</h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dolores nemo illum, accusamus error vel esse sapiente fuga.
+                  </p>
+                  <p>
+                    Id, nulla molestias quod animi maiores, saepe doloribus,
+                    sint vero error dolor sapiente.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section class="accordion__item">
+              <h2 class="accordion__header">
+                <button type="button" class="accordion__btn">Block 3</button>
+              </h2>
+              <div class="accordion__content">
+                <div class="accordion__body">
+                  <h3 class="title-3 mb-1">Content 3</h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dolores nemo illum, accusamus error vel esse sapiente fuga.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+
+          <h2 class="title-2 mb-1">Аккордеон 2</h2>
+
+          <div class="accordion" id="accordion-2">
+            <section class="accordion__item">
+              <h2 class="accordion__header">
+                <button type="button" class="accordion__btn">Block 1</button>
+              </h2>
+              <div class="accordion__content">
+                <div class="accordion__body">
+                  <h3 class="title-3 mb-1">Content 1</h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dolores nemo illum, accusamus error vel.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section class="accordion__item">
+              <h2 class="accordion__header">
+                <button type="button" class="accordion__btn">Block 2</button>
+              </h2>
+              <div class="accordion__content">
+                <div class="accordion__body">
+                  <h3 class="title-3 mb-1">Content 2</h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dolores nemo illum, accusamus error vel esse sapiente fuga.
+                  </p>
+                  <p>
+                    Id, nulla molestias quod animi maiores, saepe doloribus,
+                    sint vero error dolor sapiente.
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section class="accordion__item">
+              <h2 class="accordion__header">
+                <button type="button" class="accordion__btn">Block 3</button>
+              </h2>
+              <div class="accordion__content">
+                <div class="accordion__body">
+                  <h3 class="title-3 mb-1">Content 3</h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Dolores nemo illum, accusamus error vel esse sapiente fuga.
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">Копирайт</div>
+      </div>
+    </footer>
+
+    <section class="modal" id="modalWindow">
+      <div class="modal__header">
+        <h2 class="modal__title">Заказать звонок</h2>
+        <p>Перезвоним в течении 15 минут</p>
+      </div>
+
+      <form class="modal__inputs">
+        <input type="text" class="input" placeholder="Имя" />
+        <input type="tel" class="input" placeholder="Телефон" />
+        <input type="email" class="input" placeholder="Email" />
+
+        <label class="modal__checkbox-label">
+          <input type="checkbox" class="real-checkbox visually-hidden" />
+          <span class="fake-checkbox"></span>
+          <span>Согласен на обработку <a href="#">персональных данных</a></span>
+        </label>
+
+        <button class="btn">Оставить заявку</button>
+      </form>
+    </section>
+
+    <a href="#top" class="top-link" id="scrollToTopBtn">
+      <img src="./img/icons/arrow-up.svg" alt="Arrow up" />
+    </a>
+
+    <!-- Vendors -->
+    <script src="./js/fancybox/fancybox.umd.js"></script>
+    <script src="./js/tiny-slider/tiny-slider.js"></script>
+
+    <!-- Скрипты -->
+    <script src="./js/scrollToTop.js"></script>
+    <script src="./js/mobile-nav.js"></script>
+    <script src="./js/tinySlider.js"></script>
+    <script src="./js/accordion.js"></script>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
